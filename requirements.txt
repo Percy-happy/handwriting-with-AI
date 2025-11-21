@@ -1,0 +1,26 @@
+# AI手写体生成应用依赖列表
+
+# GUI框架
+PyQt6>=6.4.0
+
+# AI API客户端
+openai>=0.27.0
+
+# 图像处理
+Pillow>=9.4.0
+
+# 配置管理
+python-dotenv>=1.0.0
+
+# 手写体生成
+# 注意：可能需要替换为实际可用的handwriting库
+# 这里暂时使用handwriting-synthesis作为示例
+handwriting-synthesis>=0.1.0
+
+# 系统兼容性
+six>=1.16.0
+packaging>=21.3
+
+# 可选：用于增强功能
+numpy>=1.24.0
+scipy>=1.10.0
