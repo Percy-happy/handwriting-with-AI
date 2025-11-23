@@ -40,7 +40,7 @@ handwriting-with-AI/
 ### 1. 克隆或下载项目
 
 ```bash
-git clone https://github.com/yourusername/handwriting-with-AI.git
+git clone https://github.com/Percy-happy/handwriting-with-AI.git
 cd handwriting-with-AI
 ```
 
@@ -103,7 +103,7 @@ python run_app.py
 3. 通过GUI界面中的"刷新模型列表"按钮验证应用能否正确检测到模型
 4. 如果模型列表为空，请检查Ollama服务和网络连接
 
-### 命令行界面
+### 命令行界面(正在优化😅)
 
 #### 交互式模式
 
