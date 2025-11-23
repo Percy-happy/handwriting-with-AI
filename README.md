@@ -78,7 +78,7 @@ pip install handright pillow ollama
    ```bash
    # 检查Ollama服务状态
    curl http://localhost:11434/api/tags
-   
+
    # 或者使用项目提供的测试脚本
    cd src
    python test_ollama.py
@@ -97,8 +97,9 @@ python run_app.py
 ### 注意：使用AI功能前的准备
 
 在使用GUI中的AI功能前，请确保：
-1. Ollama服务正在运行（通过`ollama serve`命令启动）
-2. 至少已下载一个可用的AI模型（如`llama3.2`、`qwen3:0.6b`等）
+
+1. Ollama服务正在运行（通过 `ollama serve`命令启动）
+2. 至少已下载一个可用的AI模型（如 `llama3.2`、`qwen3:0.6b`等）
 3. 通过GUI界面中的"刷新模型列表"按钮验证应用能否正确检测到模型
 4. 如果模型列表为空，请检查Ollama服务和网络连接
 
@@ -150,6 +151,7 @@ python src/gui.py
 图形界面提供了直观的操作方式：
 
 ### 基本转换功能
+
 - 在主页面文本框中输入要转换的文字
 - 选择手写体样式
 - 可选：指定自定义字体文件
@@ -157,6 +159,7 @@ python src/gui.py
 - 查看预览并获取生成的图片
 
 ### AI辅助功能（通过标签页切换）
+
 - **刷新模型列表**：点击按钮获取当前可用的Ollama模型
 - **选择模型**：从下拉菜单中选择要使用的AI模型
 - **输入提示词**：在输入框中输入您的问题或指令
@@ -201,35 +204,37 @@ sudo yum install python3-tkinter
 如果应用无法检测到Ollama模型，请按照以下步骤排查：
 
 1. **确认Ollama服务正在运行**：
+
    ```bash
    # 检查服务状态
    ps aux | grep ollama
    # 或者重启服务
    ollama serve
    ```
-
 2. **验证模型已正确下载**：
+
    ```bash
    ollama list
    ```
-   确认列表中显示了你需要的模型。
 
+   确认列表中显示了你需要的模型。
 3. **检查网络连接**：
+
    ```bash
    curl http://localhost:11434/api/tags
    ```
-   这应该返回包含模型信息的JSON响应。
 
+   这应该返回包含模型信息的JSON响应。
 4. **使用测试脚本诊断问题**：
+
    ```bash
    cd src
    python test_ollama.py
    ```
-   查看详细的连接和模型检测日志。
 
+   查看详细的连接和模型检测日志。
 5. **检查防火墙设置**：
    确保本地防火墙没有阻止11434端口的连接。
-
 6. **重新启动应用程序**：
    有时候需要重新启动应用程序才能识别到新的模型或服务状态变化。
 
