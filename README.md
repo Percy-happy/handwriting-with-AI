@@ -238,7 +238,6 @@ sudo yum install python3-tkinter
 - **中文轻量级模型**：`qwen3:0.6b` - 适合基础文本生成和手写内容建议
 - **代码相关模型**：`deepseek-coder` - 适合生成代码示例
 - **通用模型**：`llama3.2` - 通用能力强，响应质量高
-- **手写练习专用**：`code_god:latest` - 适合生成手写练习内容
 
 ## 许可证
 
