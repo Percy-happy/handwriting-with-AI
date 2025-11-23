@@ -1,0 +1,24 @@
+# 手写生成增强版 - 依赖列表
+
+# 图像处理库
+Pillow>=9.0.0
+#手写库
+handright
+
+# GUI库
+# tkinter通常包含在Python标准库中，但某些Linux发行版可能需要单独安装python3-tk
+
+# HTTP请求库 - 用于Ollama API交互
+# requests>=2.27.0  # 已被pythonollama替代
+
+# Ollama客户端库
+Ollama>=0.1.10
+
+# 可选的中文字体支持增强
+fonttools>=4.28.0
+
+# 日志记录增强（可选）
+python-json-logger>=2.0.2
+
+# 用于虚拟环境的依赖管理（确保venv正常工作）
+# venv通常包含在Python标准库中
